@@ -1,5 +1,7 @@
 package com.premium.stc.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -40,6 +42,11 @@ public class UserControllerImpl implements UserController {
 	public User updateUser(User user) throws Exception {
 	
 		return userService.updateUser(user);
+	}
+	@Override
+	public List<User> getUserList() {
+		// TODO Auto-generated method stub
+		return userService.getUserList();
 	}
 	
 }
